@@ -3,7 +3,7 @@ email: liwenjie2020@ict.ac.cn
 description: >-
   学术探索与诗意生活的交汇之地
 baseurl: "" # 如部署在子路径下需填写
-url: "" # 你的域名
+url: "https://mosqlwj.github.io" # 你的域名
 
 twitter_username: jekyllrb
 github_username:  your-github-username

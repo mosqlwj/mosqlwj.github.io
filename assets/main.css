@@ -1,0 +1,100 @@
+/* 基础样式 */
+body {
+  background-color: #F5F5DC;
+  color: {{ site.古风设置.文字色 }};
+  font-family: {{ site.古风设置.字体.正文 }};
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* 古风山水背景 */
+.ancient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/山水背景.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: {{ site.古风设置.字体.标题 }};
+  color: {{ site.古风设置.主色 }};
+  border-bottom: 1px solid {{ site.古风设置.辅助色 }};
+  padding-bottom: 0.5rem;
+}
+
+/* 导航栏样式 */
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid {{ site.古风设置.主色 }};
+}
+
+nav ul {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: {{ site.古风设置.主色 }};
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: {{ site.古风设置.辅助色 }};
+  text-decoration: underline;
+}
+
+/* 文章卡片样式 */
+.posts {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.post-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid {{ site.古风设置.主色 }};
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  background-color: {{ site.古风设置.主色 }};
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: {{ site.古风设置.辅助色 }};
+  transform: translateY(-2px);
+}
+
+/* 页脚样式 */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid {{ site.古风设置.主色 }};
+  background-color: rgba(255, 255, 255, 0.8);
+}
